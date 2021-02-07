@@ -57,7 +57,9 @@ img{
 }
 
 .portfolio {
-    background-color: teal;
+    background-color: cadetblue;
+    background-image: url('/img/Grupa\ 13.png');
+    background-size: cover;
 }
 
 .circle {
