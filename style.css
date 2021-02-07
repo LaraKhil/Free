@@ -46,7 +46,10 @@ img{
     display: flex;
     justify-content: space-between;
 }
-
+.work-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .card-footer{
     text-align: center;
 }
