@@ -37,7 +37,9 @@ img{
 .cards-wrapper{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+
+    background-color: #F1F8FF;
+
 }
 
 .card-footer{
@@ -52,6 +54,7 @@ img{
 
 .card-expert{
     text-align: center;
+    flex-basis: 32%;
 }
 
 .card-client{
@@ -184,6 +187,55 @@ img{
 .footer-btn:hover{
     color: #fff;
     background-color:#194277;
+}
+
+.portfolio {
+    background-color: teal;
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+    color: white;
+}
+
+.free {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 25px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 25px;
+}
+
+.butt {
+    background-color: white;
+    color: #3695FF;
+    border: none;
+    width: 69px;
+    height: 19px;
+    border-radius: 20px;
+}
+
+.expert {
+    color: #3695FF;
+    text-align: center;
+}
+
+h2 {
+    color: #3677FD;
+    font-weight: 400;
+}
+
+.text-expert {
+    font-weight: 300;
+    color: #5A5A5A;
 }
 
 /* Media sizes. Only if we will have a time*/
