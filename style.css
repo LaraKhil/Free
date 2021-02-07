@@ -243,6 +243,13 @@ p {
     font-weight: 600;
     font-size: 16px;
     margin-top: 3rem;
+    transition:all 0.3s linear;
+    
+}
+.butt:hover{
+    background-color:  #1884ff;
+    color:#fff;
+    
 }
 
 .expert {
