@@ -31,11 +31,13 @@ img{
     align-items: center;
     width: 90%;
     max-width: 1000px; 
+    margin:2rem 0;
 }
 
 .cards-wrapper{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .card-footer{
@@ -44,6 +46,8 @@ img{
 
 .card-work{
     text-align: center;
+    flex-basis: 32%;
+    margin-bottom: 2rem;
 }
 
 .card-expert{
@@ -52,6 +56,133 @@ img{
 
 .card-client{
     text-align: center;
+}
+.h1-works{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color:#3695FF;
+}
+
+.header{
+    background-color: #194277;
+    height: 72px;
+}
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+    width: 35%;
+}
+
+.nav-p{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+   
+}
+
+.nav-btn{
+    color:#194277;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    width: 112px;
+    border-radius: 20px;
+    height:30px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.nav-btn:hover{
+    color: #fff;
+    background-color:#194277;
+}
+
+.about{
+    padding: 2rem;
+}
+
+.h1-about{
+    margin-bottom:2rem;
+}
+
+.about-center{
+    text-align: center;
+}
+.about-p{
+    color:#5A5A5A;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.clients{
+    background-color: #F1F8FF;
+}
+
+.card-client{
+    flex-basis: 25%;
+    height:50px;
+    align-items: baseline;
+    cursor: pointer;
+    
+}
+
+.img-client{
+    height:40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+   
+}
+
+.cards-wrapper-client{
+    width: 100%;
+} 
+
+.footer{
+    background-image: url(./img/Grupa13.svg);
+    background-color: burlywood;
+    width: 100%;
+}
+
+.center-footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 70%; */
+    justify-content: space-between;
+    margin:3rem 0;
+    
+}
+
+.footer-h1{
+    color:#fff;
+    font-weight: 300;
+    font-size: 44px;
+}
+
+.footer-span{
+    font-weight: 600;
+}
+
+.footer-btn{
+    font-size:14px;
+    font-weight: bold;
+    background-color: #fff;
+    color:#3695FF;
+    border-radius: 20px;
+    height: 40px;
+    padding:0 0.2rem;
+    width: 150px;
+    cursor: pointer;
+    transition:all .3s linear;
+}
+
+.footer-btn:hover{
+    color: #fff;
+    background-color:#194277;
 }
 
 /* Media sizes. Only if we will have a time*/
