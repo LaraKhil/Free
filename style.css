@@ -37,9 +37,14 @@ img{
 .cards-wrapper{
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    
+}
 
+.cards-wrapper-expert{
     background-color: #F1F8FF;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-footer{
@@ -146,8 +151,8 @@ img{
 } 
 
 .footer{
-    background-image: url(./img/Grupa13.svg);
-    background-color: burlywood;
+    background-color: #4b7bec;
+    background-image: url(./img/bg.png);
     width: 100%;
 }
 
@@ -190,42 +195,60 @@ img{
 }
 
 .portfolio {
-    background-color: teal;
+    background-color: #4b7bec;
+    background-image: url(./img/bg.png);
+    background-position: center;
+    min-height:100vh;
 }
-
+.center-port{
+    width: 60%;
+}
 .circle {
     width: 140px;
     height: 140px;
-    border-radius: 25px;
-    color: white;
+    border-radius: 50%;
+    background-color: white;
+    border:20px solid rgba(192, 217, 233, 0.3);
+    letter-spacing: 1.25px;
 }
 
 .free {
     color: white;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 900;
     margin: 25px;
+    text-align: center;
+    line-height: 60px;
 }
 
 p {
     color: white;
     font-size: 16px;
     font-weight: 300;
-    margin: 25px;
+    /* margin: 1rem 0; */
+}
+
+.p-port{
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .butt {
     background-color: white;
     color: #3695FF;
     border: none;
-    width: 69px;
-    height: 19px;
+    width: 204px;
+    height: 55px;
     border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 3rem;
 }
 
 .expert {
     color: #3695FF;
     text-align: center;
+    background-color: #F1F8FF;
 }
 
 h2 {
@@ -236,8 +259,30 @@ h2 {
 .text-expert {
     font-weight: 300;
     color: #5A5A5A;
+    line-height: 35px;
+    font-size: 16px;
+}
+.card-expert{
+    flex-basis: 30%;
+    margin-bottom: 3rem;
+}
+.img-expert{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-bottom: 3rem;
+ 
 }
 
+.img-expert img{
+    -o-object-fit: contain;
+       object-fit: contain;
+    /* width:50%; */
+    /* height:50%; */
+    background-position: bottom;
+   
+}
 /* Media sizes. Only if we will have a time*/
 
 @media screen and (max-width:575.8px){
