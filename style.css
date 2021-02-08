@@ -326,7 +326,7 @@ img{
 
 /* End of Footer */
 
-/* Media sizes. Only if we will have a time*/
+
 
 @media screen and (max-width:575.8px){
     /* General */
@@ -537,6 +537,7 @@ img{
     }
 
     /* End of Footer */
+    
 
 }
 
@@ -643,7 +644,7 @@ img{
         margin-bottom: 1.5rem;
     }
 
-/* End of Work Section */
+    /* End of Work Section */
     
 }
 
@@ -907,5 +908,4 @@ img{
 
 /* End of Work Section */
   
-}
 }
