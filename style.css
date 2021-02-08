@@ -333,17 +333,19 @@ img{
     
     .h1{
         font-size: 25px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        word-wrap: break-word;
     }
     
     .h2{
         font-size: 16px;
+        margin-bottom: 0.5rem;
     }
 
     .h1--first-page {
         font-size: 20px;
         letter-spacing: 0;
-        line-height: 30px;
+        line-height: 25px;
         width: 100%;
     }
 
@@ -361,7 +363,6 @@ img{
     /* Header */
     .header{
         background-color: #194277;
-        /* height: 72px; */
         padding: 0.2rem 0;
     }
 
@@ -377,19 +378,20 @@ img{
         font-weight: 400;
         color:#fff;
         margin-right: 4%;
+        text-align: center;
     }
 
     .nav-btn{
         color:#194277;
         font-size: 10px;
-        /* width: 112px; */
         border-radius: 20px;
-        height:30px; 
+        height:25px; 
         padding:0.2rem; 
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
+        width: 35%;
     }
 
-        .nav-btn:hover{
+    .nav-btn:hover{
         color: #fff;
         background-color:#194277;
         border:2px solid #fff;
@@ -397,6 +399,30 @@ img{
 
     /* End of Header */
 
+    /* First Page */
+
+    .circle{
+        width: 110px;
+        height: 110px;
+        margin-bottom: 0;  
+    }
+
+    .p--first-page{
+        width: 100%;
+        font-size:12px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+
+    .btn--first-page{
+        width: 60%;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 1rem; 
+    }
+    /* End of First Page */
+
+    
     /* About Section */
 
     .center--about{
@@ -406,6 +432,10 @@ img{
         padding:1rem 0;
     }
 
+    .h1-about{
+        margin-bottom: 2rem;
+    }
+    
     .p--about{
         color:#5A5A5A;
         line-height: 20px;
@@ -416,6 +446,42 @@ img{
     }
     /* End of About */
 
+    /* Experts Section */
+
+
+    .center--experts{
+        margin: 2rem 0 0 0;
+    }
+
+    .cards-wrapper--expert{
+        background-color: #F1F8FF;
+        flex-flow:row wrap;
+    }
+
+    .p-expert {
+        line-height: 20px;
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .card-expert{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+        background-color: white;
+        padding:1.5rem 0;
+        box-shadow: 2px 2px 4px rgba(175, 193, 235, 0.714);
+    }
+
+    .img-expert{
+        width:50px;
+        height:50px;
+        margin:0 auto 1rem auto;
+        padding:0.5rem;
+    }
+    
+    /* End of Experts */
+    
     /* Works Section */
 
     .center--works{
@@ -425,10 +491,53 @@ img{
     .card-work{
         flex-basis: 100%;
         margin-bottom: 1.5rem;
+        box-shadow: 2px 2px 4px rgb(190, 190, 190);
     }
 
     /* End of Work Section */
-  
+
+    /* Clients Section */
+
+    .center--clients{
+        margin:1.5rem 0;     
+    }
+
+    .cards-wrapper-client{
+        padding:0;
+    } 
+
+    .card-client{
+        flex-basis: 25%;
+        height:22px;
+    }
+    
+    /* End of Clients */
+
+    /* Footer */
+
+    .center--footer{
+        justify-content: space-between;
+        margin:1rem 0;
+    }
+
+    .footer-h1{
+        font-weight: 300;
+        font-size: 16px;
+        margin:0 auto;
+    }
+
+    .card-footer{
+        text-align: center;
+    }
+
+    .footer-btn{
+        font-size:12px;
+        height: 30px;
+        margin:1rem auto 0 auto;
+    }
+
+    /* End of Footer */
+
 }
 
 @media screen and (min-width:576px){
@@ -798,4 +907,5 @@ img{
 
 /* End of Work Section */
   
+}
 }
