@@ -36,95 +36,874 @@ img{
 .cards-wrapper{
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    
+}
+
+.h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color:#3695FF;
+}
+
+.h2 {
+    color: #3677FD;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s linear;
+    font-weight: 600;
+    border:2px solid transparent;
+    box-shadow: 2px 2px 3px rgba(56, 56, 56, 0.575);
+}
+
+/* End of General */
+
+/* Header */
+
+.header{
+    background-color: #194277;
+    height: 72px;
+}
+
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.nav-p{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    margin-right: 4%;
+}
+
+.nav-btn{
+    color:#194277;
+    font-size: 12px;
+    width: 112px;
+    border-radius: 20px;
+    height:30px;  
+}
+
+.nav-btn:hover{
+    color: #fff;
+    background-color:#194277;
+    border:2px solid #fff;
+}
+
+
+/* first page */
+.first-page {
+    background-color: #4b7bec;
+    background-image: url(./img/bg.png);
+    background-position: center;
+    min-height:calc(100vh - 72px);
+}
+
+.center--first-page{
+    width: 60%;
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: white;
+    border:10px solid rgba(192, 217, 233, 0.3);
+    letter-spacing: 1.25px;
+    margin-bottom: 2rem;
+}
+
+.h1--first-page {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 1.5rem 0 0.5rem 0;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 1.25px;
+}
+
+.p--first-page{
+    text-align: center;
+    margin:0 auto 1rem auto;
+    width: 90%;
+    color:#fff;
+    font-size:16px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.btn--first-page{
+    color: #3695FF;
+    width: 204px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 3rem; 
+}
+.btn--first-page:hover{
+    background-color:  #3b5fe2;
+    color:#fff; 
+}
+
+/* End of First Page */
+
+/* About Section */
+
+.h1-about{
+    margin-bottom: 2rem;
+}
+
+.center--about{
+    text-align: center;
+     margin: 4rem 0;
+}
+
+.p--about{
+    color:#5A5A5A;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 90%;
+}
+
+/* End of About */
+
+/* Experts Section */
+
+.expert {
+    color: #3695FF;
+    text-align: center;
     background-color: #F1F8FF;
+}
+
+.center--experts{
+    margin: 4rem 0 0 0;
+}
+
+.cards-wrapper--expert{
+    background-color: #F1F8FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-expert {
+    font-weight: 400;
+    color: #5A5A5A;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.card-expert{
+    flex-basis: 30%;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.img-expert{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin:0 auto 3rem auto;
+    border:2px solid #B7C0C9;
+    padding:1.5rem;
+ 
+}
+
+.img-expert img{
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+}
+
+/* End of Experts Section */
+
+/* Works Section */
+
+.center--works{
+    margin:4rem 0;
+}
+.work-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-work{
+    text-align: center;
+    flex-basis: 31%;
+    margin-bottom: 2rem;
+}
+
+/* End of Work Section */
+
+/* Clients Section */
+
+.clients{
+    background-color: #F1F8FF;
+}
+
+.center--clients{
+    margin:4rem 0;
+}
+
+.cards-wrapper-client{
+    width: 100%;
+} 
+
+.card-client{
+    flex-basis: 25%;
+    height:50px;
+    align-items: baseline;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.img-client{
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%; 
+}
+
+
+/* End of Clients Section */
+
+/* Footer Section */
+
+.footer{
+    background-color: #4b7bec;
+    background-image: url(./img/bg.png);
+}
+
+.center--footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:3rem 0;
+    
+}
+
+.footer-h1{
+    color:#fff;
+    font-weight: 300;
+    font-size: 44px;
+}
+
+.footer-span{
+    font-weight: 600;
 }
 
 .card-footer{
     text-align: center;
 }
 
-.card-work{
-    text-align: center;
-}
-
-.card-expert{
-    text-align: center;
-    flex-basis: 32%;
-}
-
-.card-client{
-    text-align: center;
-}
-
-.portfolio {
-    background-color: cadetblue;
-    background-image: url('/img/Grupa\ 13.png');
-    background-size: cover;
-}
-
-.circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 25px;
-    color: white;
-}
-
-.free {
-    color: white;
-    font-size: 50px;
-    font-weight: 500;
-    margin: 25px;
-}
-
-p {
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 25px;
-}
-
-.butt {
-    background-color: white;
-    color: #3695FF;
-    border: none;
-    width: 69px;
-    height: 19px;
+.footer-btn{
+    font-size:14px;
+    color:#3695FF;
     border-radius: 20px;
+    height: 40px;
+    padding:0 0.2rem;
+    width: 150px;
 }
 
-.expert {
-    color: #3695FF;
-    text-align: center;
+.footer-btn:hover{
+    color: #fff;
+    background-color:#194277;
 }
 
-h2 {
-    color: #3677FD;
-    font-weight: 400;
-}
-
-.text-expert {
-    font-weight: 300;
-    color: #5A5A5A;
-}
+/* End of Footer */
 
 /* Media sizes. Only if we will have a time*/
 
 @media screen and (max-width:575.8px){
+    /* General */
+    
+    .h1{
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    
+    .h2{
+        font-size: 16px;
+    }
+
+    .h1--first-page {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .p{
+        font-size: 16px;
+    }
+
+    .center{
+        width: 90%;
+        margin: 1.5rem;
+    }
+    
+    /* End of Genera; */
+
+    /* Header */
+    .header{
+        background-color: #194277;
+        /* height: 72px; */
+        padding: 0.2rem 0;
+    }
+
+    .nav-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+    }
+
+    .nav-p{
+        font-size: 10px;
+        font-weight: 400;
+        color:#fff;
+        margin-right: 4%;
+    }
+
+    .nav-btn{
+        color:#194277;
+        font-size: 10px;
+        /* width: 112px; */
+        border-radius: 20px;
+        height:30px; 
+        padding:0.2rem; 
+        margin-top: 0.5rem;
+    }
+
+        .nav-btn:hover{
+        color: #fff;
+        background-color:#194277;
+        border:2px solid #fff;
+    }
+
+    /* End of Header */
+
+    /* About Section */
+
+    .center--about{
+        text-align: center;
+        margin: 2rem 0;
+        background-color:#F1F8FF;
+        padding:1rem 0;
+    }
+
+    .p--about{
+        color:#5A5A5A;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 95%;
+        text-align: center;
+    }
+
+     /* End of About Section */
+
+   /* First page Section */
+
+    .h1--first-page {
+        font-size: 15px;
+    }
+
+    .p--first-page {
+        font-size: 12px;
+    }
+
+    .btn--first-page {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    /* End of First page section */
+
+    /* Expert section */
+
+    .p-expert {
+        font-weight: 300;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    
+    .img-expert {
+        height: 80px;
+        width: 80px;
+    }
+
+    .h2 {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        line-height: 20px;
+    }
+
+     /* End of Expert section */
+
+
+    /* Works Section */
+
+    .center--works{
+        margin:2rem 0;
+    }
+  
+    .card-work{
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    /* End of Work Section */
   
 }
 
 @media screen and (min-width:576px){
+
+    /* General */
+    
+    .h1{
+        font-size: 30px;
+        margin-bottom: 1.6rem;
+    }
+    
+    .h2{
+        font-size: 20px;
+    }
+
+    .h1--first-page {
+        font-size: 35px;
+        letter-spacing: 0;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .p{
+        font-size: 18px;
+    }
+
+    .center{
+        width: 90%;
+        margin: 1.5rem;
+    }
+    
+    /* End of Genera; */
+
+    /* Header */
+    .header{
+        background-color: #194277;
+        padding: 0.5rem 0;
+    }
+
+    .nav-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:0 auto;
+    }
+
+    .nav-p{
+        font-size: 12px;
+        font-weight: 400;
+        color:#fff;
+        margin-right: 2%;
+        align-self: baseline;
+    }
+
+    .nav-btn{
+        color:#194277;
+        font-size: 14px;
+        /* width: 112px; */
+        border-radius: 20px;
+        height:30px; 
+        padding:0.2rem; 
+        margin-top: 0.5rem;
+        align-self: baseline;
+    }
+
+    .nav-btn:hover{
+        color: #fff;
+        background-color:#194277;
+        border:2px solid #fff;
+    }
+
+    /* End of Header */
+
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
+    /* About Section */
+
+    .center--about{
+        text-align: center;
+        margin: 2.5rem 0;
+        background-color:#F1F8FF;
+        padding:1rem 1rem;
+        width: 75%;
+    }
+
+    .p--about{
+        color:#5A5A5A;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+    }
+    /* End of About */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 50%;
+    }
+
+    /*End of expert section */
+
+    /* Works Section */
+
+    .center--works{
+        margin:2rem 0;
+        justify-content: space-between;
+    }
+  
+    .card-work{
+        flex-basis: 48%;
+        margin-bottom: 1.5rem;
+    }
+
+/* End of Work Section */
     
 }
 
 @media screen and (min-width:768px){
+      /* General */
+    
+    .h1{
+        font-size: 30px;
+        margin-bottom: 1.6rem;
+    }
+    
+    .h2{
+        font-size: 20px;
+    }
+
+    .h1--first-page {
+        font-size: 35px;
+        letter-spacing: 0;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .p{
+        font-size: 18px;
+    }
+
+    .center{
+        width: 90%;
+        margin: 1.5rem;
+    }
+    
+    /* End of Genera; */
+
+    /* Header */
+    .header{
+        background-color: #194277;
+        padding: 0.5rem 0;
+    }
+
+    .nav-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:0 auto;
+    }
+
+    .nav-p{
+        font-size: 12px;
+        font-weight: 400;
+        color:#fff;
+        margin-right: 2%;
+        align-self: baseline;
+    }
+
+    .nav-btn{
+        color:#194277;
+        font-size: 14px;
+        /* width: 112px; */
+        border-radius: 20px;
+        height:30px; 
+        padding:0.2rem; 
+        margin-top: 0.5rem;
+        align-self: baseline;
+    }
+
+    .nav-btn:hover{
+        color: #fff;
+        background-color:#194277;
+        border:2px solid #fff;
+    }
+
+    /* End of Header */
+
+    /* About Section */
+
+    .center--about{
+        text-align: center;
+        margin: 2.5rem 0;
+        background-color:#F1F8FF;
+        padding:1rem 1rem;
+        width: 75%;
+    }
+
+    .p--about{
+        color:#5A5A5A;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+    }
+    /* End of About */
+
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 50%;
+    }
+
+    /*End of expert section */
+
+
+    /* Works Section */
+
+    .center--works{
+        margin:2rem 0;
+        justify-content: space-between;
+    }
+  
+    .card-work{
+        flex-basis: 48%;
+        margin-bottom: 1.5rem;
+    }
+
+/* End of Work Section */
 
 }
 
 @media screen and (min-width:992px){
+      /* General */
+    
+    .h1{
+        font-size: 38px;
+        margin-bottom: 2.5rem;
+    }
+    
+    .h2{
+        font-size: 28px;
+    }
+
+    .h1--first-page {
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 45px;
+    }
+
+    .p{
+        font-size: 20px;
+    }
+
+    .center{
+        margin: 3rem;
+    }
+    
+    /* End of Genera; */
+
+    /* Header */
+    .header{
+        padding: 1rem 0;
+    }
+
+    .nav-p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 3%;
+    }
+
+    .nav-btn{
+        font-size: 16px;
+        height:35px; 
+        margin: 0.5rem 0;
+    }
+
+    /* End of Header */
+
+    /* About Section */
+
+    .center--about{
+        margin: 2.5rem 0;
+        padding:1rem 1rem;
+        width: 75%;
+        background-color: transparent;
+    }
+
+    .p--about{
+        line-height: 25px;
+        font-size: 18px;
+    }
+    /* End of About */
+
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 31%;
+    }
+
+    /*End of expert section */
+
+
+    /* Works Section */
+
+    .center--works{
+        justify-content: space-between;
+    }
+  
+    .card-work{
+        flex-basis: 48%;
+        margin-bottom: 2rem;
+    }
+
+/* End of Work Section */
     
 }
 
 @media screen and (min-width:1200px){
+        /* General */
+    
+    .h1{
+        font-size: 50px;
+        margin-bottom: 4rem;
+    }
+    
+    .h2{
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .h1--first-page {
+        font-size: 50px;
+        margin: 1.5rem 0 0.5rem 0;
+        line-height: 60px;
+        letter-spacing: 1.25px;
+    }
+
+    .p{
+        font-size: 20px;
+    }
+
+    .center{
+        margin: 3rem;
+    }
+    
+    /* End of Genera; */
+
+    /* Header */
+    .header{
+        padding: 2rem 0;
+    }
+
+    .nav-p{
+        font-size: 14px;
+        margin-right: 4%;
+    }
+
+    .nav-btn{
+        font-size: 15px;
+        width: 112px;
+        border-radius: 20px;
+        height:30px;  
+    }
+
+    /* End of Header */
+
+    /* About Section */
+
+    .center--about{
+        margin: 4rem 0;
+        width: 90%;
+        background-color: transparent;
+    }
+
+    .p--about{
+        line-height: 25px;
+        font-size: 18px;
+    }
+    /* End of About */
+
+    /* First page section */
+
+    .h1--first-page {
+        font-size: 34px;
+    }
+
+    .p--first-page {
+        font-size: 18px;
+    }
+     /* End of First page section */
+
+     /* Expert section */
+
+    .card-expert {
+        flex-basis: 31%;
+    }
+
+    /*End of expert section */
+
+    /* Works Section */
+
+    .center--works{
+        justify-content: space-between;
+    }
+
+    .card-work{
+        flex-basis: 31%;
+        margin-bottom: 2rem;
+    }
+
+/* End of Work Section */
   
 }
