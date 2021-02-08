@@ -101,10 +101,8 @@ img{
     border:2px solid #fff;
 }
 
-/* End of Header */
 
-/* First Page */
-
+/* first page */
 .first-page {
     background-color: #4b7bec;
     background-image: url(./img/bg.png);
@@ -444,7 +442,48 @@ img{
         width: 95%;
         text-align: center;
     }
-    /* End of About */
+
+     /* End of About Section */
+
+   /* First page Section */
+
+    .h1--first-page {
+        font-size: 15px;
+    }
+
+    .p--first-page {
+        font-size: 12px;
+    }
+
+    .btn--first-page {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    /* End of First page section */
+
+    /* Expert section */
+
+    .p-expert {
+        font-weight: 300;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    
+    .img-expert {
+        height: 80px;
+        width: 80px;
+    }
+
+    .h2 {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        line-height: 20px;
+    }
+
+     /* End of Expert section */
+
 
     /* Experts Section */
 
@@ -611,6 +650,14 @@ img{
 
     /* End of Header */
 
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
     /* About Section */
 
     .center--about{
@@ -630,6 +677,14 @@ img{
         text-align: center;
     }
     /* End of About */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 50%;
+    }
+
+    /*End of expert section */
 
     /* Works Section */
 
@@ -737,6 +792,23 @@ img{
     }
     /* End of About */
 
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 50%;
+    }
+
+    /*End of expert section */
+
+
     /* Works Section */
 
     .center--works{
@@ -814,6 +886,23 @@ img{
         font-size: 18px;
     }
     /* End of About */
+
+    /* First-page section */
+    .h1--first-page {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* End of First-page section */
+
+    /* Expert section */
+
+    .card-expert {
+        flex-basis: 31%;
+    }
+
+    /*End of expert section */
+
 
     /* Works Section */
 
@@ -893,6 +982,25 @@ img{
         font-size: 18px;
     }
     /* End of About */
+
+    /* First page section */
+
+    .h1--first-page {
+        font-size: 34px;
+    }
+
+    .p--first-page {
+        font-size: 18px;
+    }
+     /* End of First page section */
+
+     /* Expert section */
+
+    .card-expert {
+        flex-basis: 31%;
+    }
+
+    /*End of expert section */
 
     /* Works Section */
 
