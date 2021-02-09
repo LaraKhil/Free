@@ -7,6 +7,7 @@
 body{
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 img{
@@ -61,7 +62,7 @@ img{
     transition: all .3s linear;
     font-weight: 600;
     border:2px solid transparent;
-    box-shadow: 2px 2px 3px rgba(56, 56, 56, 0.575);
+    box-shadow: 2px 2px 3px rgba(105, 105, 105, 0.342);
 }
 
 /* End of General */
@@ -122,8 +123,21 @@ img{
     border-radius: 50%;
     background-color: white;
     border:10px solid rgba(192, 217, 233, 0.3);
-    letter-spacing: 1.25px;
     margin-bottom: 2rem;
+    position: relative;
+}
+
+.circle::before{
+    content:"";
+    display:block;
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:0;
+    transform: translate(-12%, -12%);
+    background-color: rgba(210, 226, 236, 0.233);
 }
 
 .h1--first-page {
@@ -388,7 +402,7 @@ img{
         height:25px; 
         padding:0.2rem; 
         margin-top: 0.7rem;
-        width: 35%;
+        width: 25%;
     }
 
     .nav-btn:hover{
@@ -402,9 +416,15 @@ img{
     /* First Page */
 
     .circle{
-        width: 110px;
-        height: 110px;
-        margin-bottom: 0;  
+        max-width: 110px;
+        max-height: 110px;
+        margin-bottom: 0;
+    }
+
+    .circle::before{
+        max-width: 120px;
+        max-height:120px;
+        transform: translate(-12.5%, -12.5%);
     }
 
     .p--first-page{
@@ -415,7 +435,7 @@ img{
     }
 
     .btn--first-page{
-        width: 60%;
+        width: 40%;
         height: 40px;
         font-size: 14px;
         margin-top: 1rem; 
@@ -433,7 +453,7 @@ img{
     }
 
     .h1-about{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     
     .p--about{
@@ -441,8 +461,8 @@ img{
         line-height: 20px;
         font-size: 14px;
         font-weight: 400;
-        width: 95%;
-        text-align: center;
+        width: 90%;
+        text-align: left; 
     }
     /* End of About */
 
@@ -459,7 +479,7 @@ img{
     }
 
     .p-expert {
-        line-height: 20px;
+        line-height: 18px;
         font-size: 14px;
         width: 90%;
         margin: 0 auto 0 auto;
@@ -467,10 +487,10 @@ img{
 
     .card-expert{
         flex-basis: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 5%;
         background-color: white;
-        padding:1.5rem 0;
-        box-shadow: 2px 2px 4px rgba(175, 193, 235, 0.714);
+        padding:10% 0;
+        box-shadow: 2px 2px 4px rgba(199, 212, 241, 0.714);
     }
 
     .img-expert{
@@ -490,8 +510,9 @@ img{
   
     .card-work{
         flex-basis: 100%;
-        margin-bottom: 1.5rem;
-        box-shadow: 2px 2px 4px rgb(190, 190, 190);
+        margin-bottom: 5%;
+        box-shadow: 2px 2px 4px rgb(212, 212, 212);
+        border-radius: 10px;
     }
 
     /* End of Work Section */
@@ -546,23 +567,24 @@ img{
     /* General */
     
     .h1{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 1.6rem;
     }
     
     .h2{
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 0.5rem;
     }
 
     .h1--first-page {
-        font-size: 35px;
-        letter-spacing: 0;
-        line-height: 30px;
-        width: 100%;
+        font-size: 25px;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        width: 90%;
     }
 
     .p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .center{
@@ -574,7 +596,6 @@ img{
 
     /* Header */
     .header{
-        background-color: #194277;
         padding: 0.5rem 0;
     }
 
@@ -586,22 +607,18 @@ img{
     }
 
     .nav-p{
-        font-size: 12px;
-        font-weight: 400;
-        color:#fff;
-        margin-right: 2%;
-        align-self: baseline;
+        font-size: 10px;
+        margin-right: 2.5%;
+        align-self: center;
     }
 
     .nav-btn{
-        color:#194277;
-        font-size: 14px;
-        /* width: 112px; */
+        font-size: 12px;
         border-radius: 20px;
-        height:30px; 
+        height:25px; 
         padding:0.2rem; 
-        margin-top: 0.5rem;
-        align-self: baseline;
+        margin-top: 0;
+        align-self: center;
     }
 
     .nav-btn:hover{
@@ -612,6 +629,22 @@ img{
 
     /* End of Header */
 
+    /* First Page */
+
+    .p--first-page{
+        font-size: 14px;
+        line-height: 18px;
+        width: 80%;
+    }
+
+    .btn--first-page{
+        height: 35px;
+        font-size: 14px;
+        margin-top: 1.5rem;
+    }
+    
+    /* End of First Page */
+
     /* About Section */
 
     .center--about{
@@ -619,18 +652,58 @@ img{
         margin: 2.5rem 0;
         background-color:#F1F8FF;
         padding:1rem 1rem;
-        width: 75%;
+        width: 90%;
+    }
+
+    .h1-about{
+        margin-bottom: 1rem;
     }
 
     .p--about{
         color:#5A5A5A;
-        line-height: 20px;
+        line-height: 23px;
         font-size: 16px;
         font-weight: 400;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        letter-spacing: 0.5px;
     }
     /* End of About */
+
+    /* Experts */
+    
+    .card-expert{
+        flex-basis: 48%;
+        box-shadow: 2px 2px 4px rgba(199, 212, 241, 0.714);
+        background-color: #fff;
+        margin-bottom: 5%;
+        padding:2rem 0;
+    }
+
+    .center--experts{
+        margin: 2rem 0 0 0;
+    }
+
+    .cards-wrapper--expert{
+        background-color: #F1F8FF;
+        flex-flow:row wrap;
+    }
+
+    .p-expert {
+        line-height: 22px;
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+     .img-expert{
+        width:70px;
+        height:70px;
+        margin:0 auto 1rem auto;
+        padding:1rem;
+    }
+
+    /* End of Experts */
 
     /* Works Section */
 
@@ -645,6 +718,48 @@ img{
     }
 
     /* End of Work Section */
+
+    /* Clients Section */
+
+    .center--clients{
+        margin:1.5rem 0;     
+    }
+
+    .cards-wrapper-client{
+        padding:0;
+    } 
+
+    .card-client{
+        flex-basis: 25%;
+        height:30px;
+    }
+
+    /* Footer Section */
+    
+    .center--footer{
+        justify-content: center;
+        margin:1rem 0;
+    }
+
+    .footer-h1{
+        font-weight: 300;
+        font-size: 22px;
+        margin:0 auto;
+        line-height: 25px;
+    }
+
+    .card-footer{
+        text-align: center;
+    }
+
+    .footer-btn{
+        font-size:14px;
+        height: 30px;
+        margin:0 auto 0 auto;
+        
+    }
+
+    /* End of Footer */
     
 }
 
@@ -652,19 +767,23 @@ img{
       /* General */
     
     .h1{
-        font-size: 30px;
-        margin-bottom: 1.6rem;
+        font-size: 35px;
+        margin-bottom: 2.5rem;
+    }
+
+    .h1-about{
+        margin-bottom: 1.5rem;
     }
     
     .h2{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .h1--first-page {
         font-size: 35px;
-        letter-spacing: 0;
-        line-height: 30px;
-        width: 100%;
+        letter-spacing: .8px;
+        line-height: 42px;
+        width: 90%;
     }
 
     .p{
@@ -680,63 +799,105 @@ img{
 
     /* Header */
     .header{
-        background-color: #194277;
-        padding: 0.5rem 0;
+        padding:0;
     }
-
+    
     .nav-center{
-        display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: center;
-        margin:0 auto;
     }
 
+    
     .nav-p{
-        font-size: 12px;
-        font-weight: 400;
-        color:#fff;
-        margin-right: 2%;
-        align-self: baseline;
+        font-size: 14px;
+        margin-right: 3%;
+        align-self: center;
     }
 
     .nav-btn{
-        color:#194277;
-        font-size: 14px;
-        /* width: 112px; */
-        border-radius: 20px;
-        height:30px; 
+        font-size: 16px;
+        height:34px; 
         padding:0.2rem; 
-        margin-top: 0.5rem;
-        align-self: baseline;
-    }
-
-    .nav-btn:hover{
-        color: #fff;
-        background-color:#194277;
-        border:2px solid #fff;
+        margin-top: 0;
     }
 
     /* End of Header */
 
+    /* First Page */
+
+    .circle{
+        max-width: 140px;
+        max-height: 140px;
+        margin-bottom: 2rem;
+    }
+
+    .circle::before{
+        max-width: 160px;
+        max-height:160px;
+        transform: translate(-12.5%, -12.5%);
+    }
+
+    .p--first-page{
+        font-size:16px;
+        line-height: 22px;
+    }
+
+    .btn--first-page{
+        width: 30%;
+        height: 45px;
+        font-size: 16px;
+        margin-top: 1.5rem; 
+    }
+    /* End of First Page */
+
     /* About Section */
 
     .center--about{
-        text-align: center;
-        margin: 2.5rem 0;
-        background-color:#F1F8FF;
-        padding:1rem 1rem;
-        width: 75%;
+        margin: 3rem 0;
+        padding:2rem 1rem;
+        width: 85%;
     }
 
     .p--about{
-        color:#5A5A5A;
-        line-height: 20px;
-        font-size: 16px;
-        font-weight: 400;
-        width: 100%;
-        text-align: center;
+        line-height: 25px;
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 0.3px;
     }
     /* End of About */
+
+    /* Experts Section*/
+
+    .center--experts{
+        margin: 3rem 0 0 0;
+    }
+
+    .cards-wrapper--expert{
+        background-color: #F1F8FF;
+        flex-flow:row wrap;
+    }
+
+    .p-expert {
+        line-height: 22px;
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .card-expert{
+        flex-basis: 48%;
+        margin-bottom: 5%;
+        padding:2rem 0;
+        box-shadow: 2px 2px 4px rgba(199, 212, 241, 0.714);
+        background-color: #fff;
+    }
+
+    .img-expert{
+        width:70px;
+        height:70px;
+        margin:0 auto 1rem auto;
+        padding:1rem;
+    }
 
     /* Works Section */
 
@@ -747,10 +908,54 @@ img{
   
     .card-work{
         flex-basis: 48%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 5%;
+        box-shadow: 2px 2px 4px rgb(212, 212, 212);
+        border-radius: 10px;
     }
 
-/* End of Work Section */
+    /* End of Work Section */
+
+    /* Clients Section */
+
+     .center--clients{
+        margin:2rem 0;     
+    }
+
+    .cards-wrapper-client{
+        padding:0;
+    } 
+
+    .card-client{
+        flex-basis: 25%;
+        height:40px;
+    }
+
+    /* End of Clients */
+
+    /* Footer Section */
+
+    .center--footer{
+        justify-content: space-between;
+        margin:1.5rem 0;
+    }
+
+    .footer-h1{
+        font-weight: 300;
+        font-size: 25px;
+        margin:0 auto;
+        line-height: 30px;
+    }
+
+    .card-footer{
+        text-align: center;
+    }
+
+    .footer-btn{
+        font-size:16px;
+        height: 35px;
+        margin:0 auto 0 auto;
+        
+    }
 
 }
 
@@ -763,13 +968,14 @@ img{
     }
     
     .h2{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .h1--first-page {
         font-size: 40px;
-        letter-spacing: 1px;
+        letter-spacing: 0.2px;
         line-height: 45px;
+        margin-bottom: 1rem;
     }
 
     .p{
@@ -790,16 +996,45 @@ img{
     .nav-p{
         font-size: 14px;
         font-weight: 400;
-        margin-right: 3%;
+        margin-right: 4%;
     }
 
     .nav-btn{
-        font-size: 16px;
-        height:35px; 
+        font-size: 17px;
+        height:30px; 
         margin: 0.5rem 0;
     }
 
     /* End of Header */
+
+    /* First Page */
+
+    .circle{
+        max-width: 150px;
+        max-height: 150px;
+        margin-bottom: 2.5rem;
+    }
+
+    .circle::before{
+        max-width: 170px;
+        max-height:170px;
+        transform: translate(-12.5%, -12.5%);
+    }
+
+    .p--first-page{
+        font-size:16px;
+        line-height: 22px;
+        width: 80%;
+    }
+
+    .btn--first-page{
+        width: 20%;
+        height: 45px;
+        font-size: 17px;
+        margin-top: 1.5rem; 
+    }
+
+    /* End of First Page */
 
     /* About Section */
 
@@ -810,16 +1045,63 @@ img{
         background-color: transparent;
     }
 
+    .h1-about{
+        margin-bottom: 1rem;
+    }
+
     .p--about{
         line-height: 25px;
         font-size: 18px;
+        letter-spacing: 0.2px;
+        text-align: left;
     }
     /* End of About */
+
+    /* Experts Section */
+
+    .center--about{
+        margin: 3rem 0;
+        padding:2rem 1rem;
+        width: 85%;
+    }
+
+    .p--about{
+        line-height: 25px;
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 0.3px;
+    }
+    /* End of About */
+
+    /* Experts Section*/
+
+    .center--experts{
+        margin: 3rem 0 3rem 0;
+        width: 70%;
+    }
+
+    .p-expert {
+        line-height: 22px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .card-expert{
+        padding:2.5rem 0;
+    }
+
+    .img-expert{
+        width:75px;
+        height:75px;
+    }
+    
+    /* End of Experts */
 
     /* Works Section */
 
     .center--works{
         justify-content: space-between;
+        width: 70%;
     }
   
     .card-work{
@@ -827,7 +1109,44 @@ img{
         margin-bottom: 2rem;
     }
 
-/* End of Work Section */
+    /* End of Work Section */
+
+    /* Clients */
+
+    .center--clients{
+        margin:2rem 0;     
+    }
+
+    .cards-wrapper-client{
+        padding:0;
+        justify-content: center;
+    } 
+
+    .card-client{
+        height:45px;
+        flex-basis: 15%;
+    }
+
+    /* End of Clients */
+
+    /* Footer */
+
+    .center--footer{
+        justify-content: center;
+        margin:1.5rem 0;
+        width: 70%;
+    }
+
+    .footer-h1{
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .footer-btn{
+        font-size:18px;
+    }
+    
+    /* End of Footer */
     
 }
 
@@ -881,6 +1200,23 @@ img{
 
     /* End of Header */
 
+    /* First Page */
+
+    .circle::before{
+        content:"";
+        display:block;
+        width: 160px;
+        height:160px;
+        border-radius: 50%;
+        position: absolute;
+        left:0;
+        top:0;
+        transform: translate(-12.5%, -12.5%);
+        background-color: rgba(210, 226, 236, 0.233);
+    }
+
+    /* End of First Page */
+
     /* About Section */
 
     .center--about{
@@ -890,10 +1226,47 @@ img{
     }
 
     .p--about{
-        line-height: 25px;
+        line-height: 34px;
         font-size: 18px;
+        text-align: center;
+        width: 100%;
     }
+
+    .h1-about{
+        margin-bottom: 2rem;
+    }
+
     /* End of About */
+
+    /* Experts Section */
+
+    .center--experts{
+        margin: 4rem 0 2rem 0;
+        width: 100%;
+    }
+
+    .p-expert {
+        line-height: 35px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .card-expert{
+        padding:2.5rem 0;
+        flex-basis: 31%;
+        background-color: transparent;
+        box-shadow: none;
+        margin:0;
+    }
+
+    .img-expert{
+        width:100px;
+        height:100px;
+        padding:1.5rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    /* End of Expert */
 
     /* Works Section */
 
@@ -906,6 +1279,41 @@ img{
         margin-bottom: 2rem;
     }
 
-/* End of Work Section */
+    /* End of Work Section */
+
+    /* Clients */
+
+    .center--clients{
+        margin:4rem 0;
+        width: 100%;
+    }
+
+    .cards-wrapper-client{
+        width: 100%;
+    } 
+
+    .card-client{
+        flex-basis: 25%;
+        height:50px;
+    }
+        
+    /* End of Clients */
+
+    /* Footer Section */
+
+    .footer-h1{
+        font-size: 44px;
+        letter-spacing: 0.8px;
+    }
+
+    .footer-btn{
+        font-size:14px;
+        height: 40px;
+        padding:0 0.2rem;
+        width: 150px;
+    }
+
+    /* End of Footer */
   
+}
 }
