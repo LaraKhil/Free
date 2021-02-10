@@ -117,6 +117,81 @@ img{
     width: 60%;
 }
 
+.toggle-btn{
+    width:40px;
+    height:4px;
+    background-color:rgb(0, 47, 255);
+    position: absolute;
+    top:14%;
+    right:8%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.toggle-btn::before{
+    content:"";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(0, 47, 255);
+    margin: 0.5rem 0;
+   
+}
+
+.toggle-btn::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(0, 47, 255);
+    margin: -0.25rem 0;
+}
+
+.home{
+    position: fixed;
+    bottom: 10%;
+    right:8%;
+    width: 35px;
+    height:35px;
+    color:rgb(0, 47, 255);
+    background-color: rgb(169, 186, 223);
+    border-radius: 50%;
+    padding:0.3rem 0.6rem ;
+    font-size: 25px;
+
+}
+
+.menu-wrapper{
+    display: none;
+    position:absolute;
+    top:10%;
+    left:0;
+    width: 90%;
+    transform: translate(5.5%, 5%);
+    z-index: 120;
+    background-color:#fff;
+    height: 40%;
+}
+
+.menu-list-li{
+    text-align: center;
+    height: 35px;
+    color:#3695FF; 
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 1rem;
+}
+
+.btn-close{
+    color:red;
+    width: 100%;
+    text-align: right;
+    display: block;
+    font-size: 28px;
+    padding: 0.3rem 0.3rem 0 0;
+}
+
 .circle {
     width: 140px;
     height: 140px;
@@ -643,6 +718,12 @@ img{
         margin-top: 1.5rem;
     }
     
+    .menu-list-li{
+        height: 20px;
+        font-size: 28px;
+        line-height: 35px;
+        height: 45px;
+    }
     /* End of First Page */
 
     /* About Section */
@@ -1034,6 +1115,12 @@ img{
         margin-top: 1.5rem; 
     }
 
+    .menu-list-li{
+        font-size: 35px;
+        line-height: 40px;
+        height: 45px;
+    }
+
     /* End of First Page */
 
     /* About Section */
@@ -1316,4 +1403,5 @@ img{
     /* End of Footer */
   
 }
+
 }
