@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="section header">
+    <header id="home" class="section header">
         <div class="center nav-center">
             <p class="nav-p">This site uses cookies, so that my service can work better.</p>
             <button class="btn nav-btn">Accept</button>
@@ -20,6 +20,25 @@
 
         <section class="section first-page">
             <div class="center center--first-page">
+                <div id="toggleBtn" class="toggle-btn"></div>
+                <a class="home" href="#home">&uarr;</a>
+                <div id="menuWrapper" class="menu-wrapper">
+                    <btn class="btn-close" id="btnClose">&#10005;</btn>
+                    <ul  id="menuList" class="menu-list">
+                        <li class="menu-list-li">
+                            <a href="#about">About Me</a>
+                        </li>
+                        <li class="menu-list-li">
+                            <a href="#expert"> Expert In</a>
+                        </li>
+                        <li class="menu-list-li">
+                            <a href="#works">Latest Works</a>
+                        </li>
+                        <li class="menu-list-li">
+                            <a href="#clients">See our CLients</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="circle"></div>
                 <h1 class="h1--first-page">FREE PORTFOLIO PSD TEMPLATE FOR GRAPHIC DESIGNERS</h1>
                 <p class="p--first-page">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET
@@ -28,14 +47,14 @@
             </div>
         </section>
 
-        <section class="section about">
+        <section id="about" class="section about">
             <div class="center center--about ">
                 <h1 class="h1 h1-about">About Me</h1>
                 <p class="p--about">Lorem  i ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus mollitia? Dolore beatae vitae necessitatibus quaerat odio id ducimus tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, maiores. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, maiores!</p>
             </div>
         </section>
 
-        <section class="section expert">
+        <section id="expert" class="section expert">
             <div class="center center--experts">
                 <h1 class="h1">Expert In</h1>
                 <div class="cards-wrapper cards-wrapper--expert">
@@ -85,7 +104,7 @@
             </div>
         </section>
 
-        <section class="section works">
+        <section id="works" class="section works">
             <div class="center center--works">
                 <h1 class="h1">Latest Works</h1>
                 <div class="cards-wrapper work-wrapper">
@@ -111,7 +130,7 @@
             </div>
         </section>
 
-        <section class="section clients">
+        <section id="clients" class="section clients">
             <div class="center center--clients">
                 <h1 class="h1">
                     Clients
@@ -148,5 +167,6 @@
             <button class="btn footer-btn">Hire me!</button>
         </div>
     </footer>
+    <script src="./free.js"></script>
 </body>
 </html>
