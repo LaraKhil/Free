@@ -156,8 +156,8 @@ img{
     color:rgb(0, 47, 255);
     background-color: rgb(169, 186, 223);
     border-radius: 50%;
-    padding:0.3rem 0.6rem ;
-    font-size: 25px;
+    padding:0.4rem 0.3rem ;
+    font-size: 20px;
 
 }
 
@@ -170,7 +170,7 @@ img{
     transform: translate(5.5%, 5%);
     z-index: 120;
     background-color:#fff;
-    height: 40%;
+    /* height: 40%; */
 }
 
 .menu-list-li{
